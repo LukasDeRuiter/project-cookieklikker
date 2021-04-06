@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klikgame</title>
+    <link rel="stylesheet" href="klikkie.css">
+</head>
+
+<nav class="navbar">
+    <div class="navContainer">
+      <a href="" id="navbarLogo">Klikkie</a>
+      <div class="navbarToggle" id="navbarMobiel">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </div>
+      <ul class="navMenu">
+        <li class="navbarDeel"><a href="/" class="navbarLink">Home</a></li>
+        <li class="navbarDeel"><a href="/" class="navbarLink">Highscores</a></li>
+        <li class="navbarDeel"><a href="/" class="navbarLink">About</a></li>
+        <li class="navbarBtn"><a href="/" class="button">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<body>
+
+<div class="schermContainer2">
+  <div class="schermContainer1">
+
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <img src="klikkieCookie2.png" class="Koekje2" id="idKoekje2" alt="Koekje">
+    <img src="klikkieCookie1.png" class="Koekje1" id="idKoekje1" alt="Koekje">
+    <img src="klikkieCookie3.png" class="Koekje3" id="idKoekje3" alt="Koekje">
+    <p class="scoreOpmaak"><span id="score">0</span></p>
+    <div class="scoreTeller">
+      <div id ="raccoonAdd"></div>
+      <div id ="groundhogAdd"></div>
+      <div id ="gnomeAdd"></div>
+      <div id ="robotAdd"></div>
+      <div id ="monsterAdd"></div>
+      <div id ="commieAdd"></div>
+      <div id ="sergeantAdd"></div>
+      <div id ="saitAdd"></div>
+      <div id ="gungagingaAdd"></div>
+      <div id ="boogaAdd"></div>
+    </div>
+    
+
+
+  </div>
+</div>
+
+<div class="helpersContainer">
+  <div class="helpersContainerDeel">
+    <div class="afb"><img src="cookieRaccoon.jpg" class="portret"></div>
+    <button class="plus1" id="raccoonBtn1">1</button>
+    <button class="plus2" id="raccoonBtn2">2</button>
+    <button class="plus3" id="raccoonBtn3">3</button>
+    <button class="plus4" id="raccoonBtn4">4</button>
+    <div class="powerLevel"><p> <span id="raccoonCookies">Cookies: 0 </span></p> </div>
+    <div class="amount"><p> <span id="amountRaccoons">Raccoons: 0 </span></p></div>
+    <div class="helperNaam"><p><span>Raccoon</span></p></div>
+    <div class="costs"><p><span id="raccoonCosts">Cost per Raccoon: 50</span></p></div>
+  </div>
+  
+  <div class="helpersContainerDeel" id="helper2">
+    <div class="afb"><img src="CookieGroundhog.jpg" class="portret"> </div>
+    <button class="plus1" id="groundhogBtn1">1</button>
+    <button class="plus2" id="groundhogBtn2">2</button>
+    <button class="plus3" id="groundhogBtn3">3</button>
+    <button class="plus4" id="groundhogBtn4">4</button>
+    <div class="powerLevel"><p> <span id="groundhogCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p> <span id="amountGroundhogs">Hogs: 0 </span></p> </div>
+    <div class="helperNaam"><p><span>Groundhog</span></p></div>
+    <div class="costs"><p><span id="groundhogCosts">Cost per Groundhog: 100</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper3">
+    <div class="afb"><img src="CookieGnome.jpg" class="portret"> </div>
+    <button class="plus1" id="gnomeBtn1">1</button>
+    <button class="plus2" id="gnomeBtn2">2</button>
+    <button class="plus3" id="gnomeBtn3">3</button>
+    <button class="plus4" id="gnomeBtn4">4</button>
+    <div class="powerLevel"><p> <span id="gnomeCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p> <span id="amountGnomes">Gnomes: 0 </span></p>  </div>
+    <div class="helperNaam"><p><span>Gnome</span></p></div>
+    <div class="costs"><p><span id="gnomeCosts">Cost per Gnome: 200</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper4">
+    <div class="afb"><img src="CookieRobot.jpg" class="portret"> </div>
+    <button class="plus1" id="robotBtn1">1</button>
+    <button class="plus2" id="robotBtn2">2</button>
+    <button class="plus3" id="robotBtn3">3</button>
+    <button class="plus4" id="robotBtn4">4</button>
+    <div class="powerLevel"><p> <span id="robotCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p> <span id="amountRobots">Robots: 0 </span></p>  </div>
+    <div class="helperNaam"><p><span>Robot</span></p></div>
+    <div class="costs"><p><span id="robotCosts">Cost per Robot: 400</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper5">
+    <div class="afb"><img src="CookieMonster.jpg" class="portret"> </div>
+    <button class="plus1" id="monsterBtn1">1</button>
+    <button class="plus2" id="monsterBtn2">2</button>
+    <button class="plus3" id="monsterBtn3">3</button>
+    <button class="plus4" id="monsterBtn4">4</button>
+    <div class="powerLevel"><p> <span id="monsterCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p> <span id="amountMonsters">Monsters: 0 </span></p>  </div>
+    <div class="helperNaam"><p><span>Monster</span></p></div>
+    <div class="costs"><p><span id="monsterCosts">Cost per Monster: 600</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper6">
+    <div class="afb"><img src="CookieCommie.jpg" class="portret"> </div>
+    <button class="plus1" id="commieBtn1">1</button>
+    <button class="plus2" id="commieBtn2">2</button>
+    <button class="plus3" id="commieBtn3">3</button>
+    <button class="plus4" id="commieBtn4">4</button>
+    <div class="powerLevel"><p> <span id="commieCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p><span id="amountCommies">Commies: 0 </span></p> </div>
+    <div class="helperNaam"><p><span>Communist Party of China</span></p></div>
+    <div class="costs"><p><span id="commieCosts">Cost per Commie: 900</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper7">
+    <div class="afb"><img src="CookieSergeant.jpg" class="portret"> </div>
+    <button class="plus1" id="sergeantBtn1">1</button>
+    <button class="plus2" id="sergeantBtn2">2</button>
+    <button class="plus3" id="sergeantBtn3">3</button>
+    <button class="plus4" id="sergeantBtn4">4</button>
+    <div class="powerLevel"><p> <span id="sergeantCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p><span id="amountSergeants">Sergeants: 0 </span></p> </div>
+    <div class="helperNaam"><p><span>Sergeant</span></p></div>
+    <div class="costs"><p><span id="sergeantCosts">Cost per Sergeant: 1500</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper8">
+    <div class="afb"><img src="CookieSait.jpg" class="portret"> </div>
+    <button class="plus1" id="saitBtn1">1</button>
+    <button class="plus2" id="saitBtn2">2</button>
+    <button class="plus3" id="saitBtn3">3</button>
+    <button class="plus4" id="saitBtn4">4</button>
+    <div class="powerLevel"><p> <span id="saitCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p><span id="amountSaits">Saits: 0 </span></p> </div>
+    <div class="helperNaam"><p><span>Sait</span></p></div>
+    <div class="costs"><p><span id="saitCosts">Cost per Sait: 2000</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper9">
+    <div class="afb"><img src="CookieGungaginga.jpg" class="portret"> </div>
+    <button class="plus1" id="gungagingaBtn1">1</button>
+    <button class="plus2" id="gungagingaBtn2">2</button>
+    <button class="plus3" id="gungagingaBtn3">3</button>
+    <button class="plus4" id="gungagingaBtn4">4</button>
+    <div class="powerLevel"><p> <span id="gungagingaCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p><span id="amountGungagingas">Gungas: 0 </span></p> </div>
+    <div class="helperNaam"><p><span>Gunga Ginga</span></p></div>
+    <div class="costs"><p><span id="gungagingaCosts">Cost per Gungaa: 4000</span></p></div>
+  </div>
+  <div class="helpersContainerDeel" id="helper10">
+    <div class="afb"><img src="CookieBooga.jpg" class="portret"> </div>
+    <button class="plus1" id="boogaBtn1">1</button>
+    <button class="plus2" id="boogaBtn2">2</button>
+    <button class="plus3" id="boogaBtn3">3</button>
+    <button class="plus4" id="boogaBtn4">4</button>
+    <div class="powerLevel"><p> <span id="boogaCookies">Cookies: 0 </span></p>  </div>
+    <div class="amount"><p><span id="amountBoogas">Yoshis: 0 </span></p> </div>
+    <div class="helperNaam"><p><span>Beeg Yoshi</span></p></div>
+    <div class="costs"><p><span id="boogaCosts">Cost per Yoshi: 5000</span></p></div>
+  </div>
+  
+</div>
+
+
+<div class="upgradeContainer">
+  <div class="upgradeContainerDeel" id="upgrade1">
+    <div class="afb"><img src="upgrades/upgrade1.png" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade1">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Dark Chocolate Cookie</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade1Costs">Cost: 200</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade3">
+    <div class="afb"><img src="upgrades/upgrade3.png" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade3">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Smarter Raccoons</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade3Costs">Cost: 400</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade4">
+    <div class="afb"><img src="upgrades/upgrade4.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade4">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Groundhog Day</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade4Costs">Cost: 800</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade5">
+    <div class="afb"><img src="upgrades/upgrade5.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade5">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Gnome Swagger</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade5Costs">Cost: 1200</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade6">
+    <div class="afb"><img src="upgrades/upgrade6.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade6">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Bigger beeps, faster boops</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade6Costs">Cost: 2000</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade7">
+    <div class="afb"><img src="upgrades/upgrade7.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade7">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Cookiemonster existentialism</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade7Costs">Cost: 3500</span></p></div>
+  </div> 
+  
+  <div class="upgradeContainerDeel" id="upgrade2">
+    <div class="afb"><img src="upgrades/upgrade2.png" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade2">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>White Chocolate Cookie</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade2Costs">Cost: 5000</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade8">
+    <div class="afb"><img src="upgrades/upgrade8.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade8">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>More propaganda</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade8Costs">Cost: 6000</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade9">
+    <div class="afb"><img src="upgrades/upgrade9.png" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade9">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Cartman's plans</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade9Costs">Cost: 8000</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade10">
+    <div class="afb"><img src="upgrades/upgrade10.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade10">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>CBR infiltratie</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade10Costs">Cost: 10000</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade11">
+    <div class="afb"><img src="upgrades/upgrade11.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade11">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Ginga frog</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade11Costs">Cost: 12000</span></p></div>
+  </div> 
+
+  <div class="upgradeContainerDeel" id="upgrade12">
+    <div class="afb"><img src="upgrades/upgrade12.jpg" class="portret"> </div>
+    <button class="buyUpgrade" id="buyUpgrade12">Buy this upgrade!</button>
+    <div class="upgradeNaam"><p><span>Hey Papa!</span></p></div>
+    <div class="costsUpgrade"><p><span id="upgrade12Costs">Cost: 15000</span></p></div>
+  </div> 
+
+</div> 
+
+
+
+</body>
+
+<script src="klikkie.js"></script>
+
+</html>
